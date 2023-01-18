@@ -20,13 +20,14 @@ body{
          align-self: center;
          border: 1px solid;
          box-shadow:8px 8px 10px  #222831;
-         padding: 1.5em;
+         padding: 2.5em;
          width: 50%;
          height: 50%;
          border-radius: 5px;
 }
 
 input[type = text]{
+        /* font-size: 1rem; */
         background: wheat;
          padding: 1.5em;
          flex-grow: 4;
@@ -46,7 +47,7 @@ button.add{
          max-height: 420px;
          overflow: auto;
          /* overflow: hidden; */
-         padding: 1.2em;
+         padding: 1em 0;
          /* background: #393E46; */
 }
 
@@ -71,6 +72,8 @@ i{
 }
 
 i:hover{
+        font-size: 1.3em;
+        transition: 200ms;
         color: aliceblue;
 }
 
@@ -83,23 +86,23 @@ i:hover{
 }
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-        color:    #EEEEEE;
+        color:    black;
     }
     :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-       color:    #EEEEEE;
+       color:    black;
        opacity:  1;
     }
     ::-moz-placeholder { /* Mozilla Firefox 19+ */
-       color:    #EEEEEE;
+       color:   black;
        opacity:  1;
     }
     :-ms-input-placeholder { /* Internet Explorer 10-11 */
-       color:    #EEEEEE;
+       color:    black;
     }
     ::-ms-input-placeholder { /* Microsoft Edge */
-       color:    #EEEEEE;
+       color:    black;
     }
     
     ::placeholder { /* Most modern browsers support this now. */
-       color:    #EEEEEE;
+       color:    black;
     }
