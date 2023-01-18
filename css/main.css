@@ -40,6 +40,7 @@ button.add{
 }
 
 li{
+        user-select: none;
          margin-top: 5px;
          padding: 1em;
          list-style: none;
