@@ -5,8 +5,9 @@
          margin: 0;
 }
 body{
-        background: #253237;
+         background: #393E46;
          box-sizing: border-box;
+         color: lawngreen;
          font-family: 'Poppins', sans-serif;
          display: flex;
          justify-content: center;
@@ -15,44 +16,90 @@ body{
 }
 
 .container{
-         background: #5c6b73;
+         background: #222831;
          align-self: center;
-         border: 1px solid purple;
-         padding: 0.5em 1em;
-         width: 80%;
-         height: 550px;
+         border: 1px solid;
+         box-shadow:8px 8px 10px  #222831;
+         padding: 1.5em;
+         width: 50%;
+         height: 50%;
+         border-radius: 5px;
 }
 
 input[type = text]{
-         /* width: 75%; */
+        background: wheat;
          padding: 1.5em;
          flex-grow: 4;
+         border-radius: 8px;
+         
 }
 
 button.add{
+        background: #3C79F5;
          flex-grow: 1.5;
          margin-left: 5px;
+         color: #EEEEEE;
+         border-radius: 8px;
 }
 
 .todos{
-         max-height: 450px;
+         max-height: 420px;
          overflow: auto;
+         /* overflow: hidden; */
+         padding: 1.2em;
+         /* background: #393E46; */
 }
 
 li{
-        user-select: none;
-         margin-top: 5px;
+         user-select: none;
+         margin-top: 8px;
          padding: 1em;
          list-style: none;
          border: 0.5px solid;
          position: relative;
+         background: #393E46;
 }
+
+li:hover{
+        background: #677386 ;
+        transition-duration: 300ms;
+}
+
 
 i{
          float:right ;
 }
 
+i:hover{
+        color: aliceblue;
+}
+
+
+
 .add-todo{
          display: flex;
-         justify-content: space-between;
+         margin-bottom: 2em;
+         
 }
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color:    #EEEEEE;
+    }
+    :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+       color:    #EEEEEE;
+       opacity:  1;
+    }
+    ::-moz-placeholder { /* Mozilla Firefox 19+ */
+       color:    #EEEEEE;
+       opacity:  1;
+    }
+    :-ms-input-placeholder { /* Internet Explorer 10-11 */
+       color:    #EEEEEE;
+    }
+    ::-ms-input-placeholder { /* Microsoft Edge */
+       color:    #EEEEEE;
+    }
+    
+    ::placeholder { /* Most modern browsers support this now. */
+       color:    #EEEEEE;
+    }
